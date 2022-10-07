@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 export const categoriesApi = createApi({
     reducerPath: 'categoriesApi',
     tagTypes: ['Categories'],
-    baseQuery: fetchBaseQuery({baseUrl: 'http://localhost:3001/'}),
+    baseQuery: fetchBaseQuery({baseUrl: 'https://immense-forest-97338.herokuapp.com/'}),
     endpoints: (build) => ({
         getCategories: build.query({
             query: () => `categories`,

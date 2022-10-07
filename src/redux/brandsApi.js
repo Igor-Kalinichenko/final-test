@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 export const brandsApi = createApi({
     reducerPath: 'brandsApi',
     tagTypes: ['Brands'],
-    baseQuery: fetchBaseQuery({baseUrl: 'http://localhost:3001/'}),
+    baseQuery: fetchBaseQuery({baseUrl: 'https://immense-forest-97338.herokuapp.com/'}),
     endpoints: (build) => ({
         getBrands: build.query({
             query: () => `brands`,
