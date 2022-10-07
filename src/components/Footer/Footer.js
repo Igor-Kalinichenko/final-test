@@ -9,7 +9,7 @@ import '../../css/Footer.css';
 function Footer () {
     return <>
     <div className='bg-dark mt-5'>
-        <Container className='d-flex justify-content-between align-items-center'>
+        <Container className='d-flex justify-content-between align-items-center footer'>
             <Link to="/"><Logo /></Link>
             <div className='d-flex m-4'>
                 <div className='text-light mx-4'>Приєднуйся</div>

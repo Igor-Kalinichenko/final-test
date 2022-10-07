@@ -9,3 +9,9 @@
 .social svg{
     fill: #fff;
 }
+
+@media screen and (max-width: 560px) {
+    .footer {
+        flex-direction: column;
+    }
+}

@@ -119,6 +119,7 @@ function AddProducts () {
                     <Form.Control 
                         type="number"
                         min="1"
+                        step="0.01"
                         placeholder="Введіть ціну товару" 
                         {...register("price", {required: true, min: 1})} 
                         className={errors?.price && 'border-danger'}/>
