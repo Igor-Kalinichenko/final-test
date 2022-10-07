@@ -1,0 +1,11 @@
+.social {
+    align-items: center;
+    border-radius: 50px;
+    display: flex;
+    height: 32px;
+    justify-content: center;
+    width: 32px;
+}
+.social svg{
+    fill: #fff;
+}

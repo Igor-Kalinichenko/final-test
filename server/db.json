@@ -1,0 +1,359 @@
+{
+  "products": [
+    {
+      "point": "Чоловікам",
+      "category": "ВЗУТТЯ",
+      "brand": "REEBOK",
+      "model": "SDGSDFGF",
+      "price": 332,
+      "sale": false,
+      "imgSrc": "https://firebasestorage.googleapis.com/v0/b/final-59c5a.appspot.com/o/empty.jpg?alt=media&token=e3fb1551-06f2-4b6e-9571-7bc66db9c3db",
+      "size": "clothSizes",
+      "addedToCart": false,
+      "count": 0,
+      "date": 1664794873814,
+      "id": 46
+    },
+    {
+      "point": "Чоловікам",
+      "category": "ШОРТИ",
+      "brand": "REEBOK",
+      "model": "CHANGED NAM",
+      "price": 654,
+      "sale": true,
+      "imgSrc": "https://firebasestorage.googleapis.com/v0/b/final-59c5a.appspot.com/o/changed%20nam_633426857bd26-62fde3c.webp?alt=media&token=a7ef69e9-737a-43f1-93ee-17f68a5eec7f",
+      "size": "clothSizes",
+      "addedToCart": false,
+      "count": 0,
+      "date": 1664795444390,
+      "id": 47
+    },
+    {
+      "point": "Чоловікам",
+      "category": "ФУТБОЛКИ",
+      "brand": "ADIDAS",
+      "model": "JHGFDS",
+      "price": 654,
+      "sale": false,
+      "imgSrc": "https://firebasestorage.googleapis.com/v0/b/final-59c5a.appspot.com/o/jhgfds_63342682333f9-62fde3c.webp?alt=media&token=a910fd28-35de-4b59-85e1-0798df2ad663",
+      "size": "clothSizes",
+      "addedToCart": false,
+      "count": 0,
+      "date": 1664795564580,
+      "id": 48
+    },
+    {
+      "point": "Дітям",
+      "category": "ШОРТИ",
+      "brand": "ADIDAS",
+      "model": "JHGFD",
+      "price": 76,
+      "sale": true,
+      "imgSrc": "https://firebasestorage.googleapis.com/v0/b/final-59c5a.appspot.com/o/empty.jpg?alt=media&token=e3fb1551-06f2-4b6e-9571-7bc66db9c3db",
+      "size": "shoesSizes",
+      "addedToCart": false,
+      "count": 0,
+      "date": 1664795588152,
+      "id": 49
+    },
+    {
+      "point": "Чоловікам",
+      "category": "ВЗУТТЯ",
+      "brand": "REEBOK",
+      "model": "MODEL 2",
+      "price": 543,
+      "sale": true,
+      "imgSrc": "https://firebasestorage.googleapis.com/v0/b/final-59c5a.appspot.com/o/model%202_63342682333f9-62fde3c.webp?alt=media&token=b3363044-de04-49f1-8f3e-2be3b3628f1e",
+      "size": "shoesSizes",
+      "addedToCart": false,
+      "count": 0,
+      "date": 1664899782852,
+      "id": 50
+    },
+    {
+      "point": "Жінкам",
+      "category": "ФУТБОЛКИ",
+      "brand": "NIKE",
+      "model": "MODEL2",
+      "price": 654,
+      "sale": false,
+      "imgSrc": "https://firebasestorage.googleapis.com/v0/b/final-59c5a.appspot.com/o/model2_633426857bd26-62fde3c.webp?alt=media&token=3eac404c-6043-43e0-875a-d123bb99bfe4",
+      "size": "clothSizes",
+      "addedToCart": false,
+      "count": 0,
+      "date": 1664899811062,
+      "id": 51
+    },
+    {
+      "point": "Дітям",
+      "category": "ФУТБОЛКИ",
+      "brand": "ADIDAS",
+      "model": "MODEL4",
+      "price": 432,
+      "sale": false,
+      "imgSrc": "https://firebasestorage.googleapis.com/v0/b/final-59c5a.appspot.com/o/model4_633426857bd26-62fde3c.webp?alt=media&token=0b80a4fa-a590-4258-82fc-f5e8f1e8fc65",
+      "size": "clothSizes",
+      "addedToCart": false,
+      "count": 0,
+      "date": 1664899837017,
+      "id": 52
+    },
+    {
+      "point": "Дітям",
+      "category": "ФУТБОЛКИ",
+      "brand": "REEBOK",
+      "model": "MODEL5",
+      "price": 654,
+      "sale": false,
+      "imgSrc": "https://firebasestorage.googleapis.com/v0/b/final-59c5a.appspot.com/o/model5_633426857bd26-62fde3c.webp?alt=media&token=29509fca-e74e-481d-bcb1-5159c8428622",
+      "size": "shoesSizes",
+      "addedToCart": false,
+      "count": 0,
+      "date": 1664899862692,
+      "id": 53
+    },
+    {
+      "point": "Дітям",
+      "category": "ФУТБОЛКИ",
+      "brand": "REEBOK",
+      "model": "MODEL5",
+      "price": 765,
+      "sale": false,
+      "imgSrc": "https://firebasestorage.googleapis.com/v0/b/final-59c5a.appspot.com/o/empty.jpg?alt=media&token=e3fb1551-06f2-4b6e-9571-7bc66db9c3db",
+      "size": "clothSizes",
+      "addedToCart": false,
+      "count": 0,
+      "date": 1664899889631,
+      "id": 54
+    },
+    {
+      "point": "Жінкам",
+      "category": "ВЗУТТЯ",
+      "brand": "NIKE",
+      "model": "MODEL15",
+      "price": 777,
+      "sale": false,
+      "imgSrc": "https://firebasestorage.googleapis.com/v0/b/final-59c5a.appspot.com/o/empty.jpg?alt=media&token=e3fb1551-06f2-4b6e-9571-7bc66db9c3db",
+      "size": "clothSizes",
+      "addedToCart": false,
+      "count": 0,
+      "date": 1664899942494,
+      "id": 55
+    },
+    {
+      "point": "Жінкам",
+      "category": "ФУТБОЛКИ",
+      "brand": "NIKE",
+      "model": "MODEL14",
+      "price": 65,
+      "sale": false,
+      "imgSrc": "https://firebasestorage.googleapis.com/v0/b/final-59c5a.appspot.com/o/empty.jpg?alt=media&token=e3fb1551-06f2-4b6e-9571-7bc66db9c3db",
+      "size": "clothSizes",
+      "addedToCart": false,
+      "count": 0,
+      "date": 1664899961979,
+      "id": 56
+    },
+    {
+      "point": "Жінкам",
+      "category": "ВЗУТТЯ",
+      "brand": "ADIDAS",
+      "model": "MODEL16",
+      "price": 765,
+      "sale": false,
+      "imgSrc": "https://firebasestorage.googleapis.com/v0/b/final-59c5a.appspot.com/o/empty.jpg?alt=media&token=e3fb1551-06f2-4b6e-9571-7bc66db9c3db",
+      "size": "shoesSizes",
+      "addedToCart": false,
+      "count": 0,
+      "date": 1664899980933,
+      "id": 57
+    },
+    {
+      "point": "Чоловікам",
+      "category": "ФУТБОЛКИ",
+      "brand": "PUMA",
+      "model": "MODEL18",
+      "price": 54,
+      "sale": false,
+      "imgSrc": "https://firebasestorage.googleapis.com/v0/b/final-59c5a.appspot.com/o/empty.jpg?alt=media&token=e3fb1551-06f2-4b6e-9571-7bc66db9c3db",
+      "size": "clothSizes",
+      "addedToCart": false,
+      "count": 0,
+      "date": 1664900002434,
+      "id": 58
+    },
+    {
+      "point": "Жінкам",
+      "category": "ВЗУТТЯ",
+      "brand": "REEBOK",
+      "model": "MODEL15",
+      "price": 654,
+      "sale": false,
+      "imgSrc": "https://firebasestorage.googleapis.com/v0/b/final-59c5a.appspot.com/o/empty.jpg?alt=media&token=e3fb1551-06f2-4b6e-9571-7bc66db9c3db",
+      "size": "clothSizes",
+      "addedToCart": false,
+      "count": 0,
+      "date": 1664900022496,
+      "id": 59
+    },
+    {
+      "point": "Чоловікам",
+      "category": "ФУТБОЛКИ",
+      "brand": "REEBOK",
+      "model": "MODEL1",
+      "price": 765,
+      "sale": false,
+      "imgSrc": "https://firebasestorage.googleapis.com/v0/b/final-59c5a.appspot.com/o/empty.jpg?alt=media&token=e3fb1551-06f2-4b6e-9571-7bc66db9c3db",
+      "size": "clothSizes",
+      "addedToCart": false,
+      "count": 0,
+      "date": 1664900043883,
+      "id": 60
+    },
+    {
+      "point": "Чоловікам",
+      "category": "ВЗУТТЯ",
+      "brand": "REEBOK",
+      "model": "SDGSDFGF",
+      "price": 654,
+      "sale": false,
+      "imgSrc": "https://firebasestorage.googleapis.com/v0/b/final-59c5a.appspot.com/o/empty.jpg?alt=media&token=e3fb1551-06f2-4b6e-9571-7bc66db9c3db",
+      "size": "clothSizes",
+      "addedToCart": false,
+      "count": 0,
+      "date": 1664900228279,
+      "id": 61
+    }
+  ],
+  "brands": [
+    {
+      "name": "adidas",
+      "id": 20
+    },
+    {
+      "name": "reebok",
+      "id": 21
+    },
+    {
+      "name": "nike",
+      "id": 22
+    },
+    {
+      "name": "puma",
+      "id": 23
+    }
+  ],
+  "categories": [
+    {
+      "name": "взуття",
+      "id": 20
+    },
+    {
+      "name": "футболки",
+      "id": 21
+    },
+    {
+      "name": "шорти",
+      "id": 22
+    }
+  ],
+  "users": [
+    {
+      "id": "XZAaxuZ2twQEgW5n4Qg1gdpvZL92",
+      "firstName": "Igor",
+      "lastName": "Калініченко",
+      "email": "admin@gmail.com",
+      "city": "Харків",
+      "phone": "+380675450505",
+      "role": "admin"
+    },
+    {
+      "id": "urAmJ9Zrj1XQDbbc71jqOzhhv7W2",
+      "firstName": "Andew",
+      "lastName": "",
+      "email": "andrew@gmail.com",
+      "city": "",
+      "phone": "",
+      "role": "user"
+    },
+    {
+      "id": "TH1TLrVfbjXW9sCwiYv1bL0LOWo2",
+      "firstName": "Andew",
+      "lastName": "",
+      "email": "andrew2@gmail.com",
+      "city": "",
+      "phone": "",
+      "role": "user"
+    },
+    {
+      "id": "nv1xce2duqP31pUrveP2JiZ00Gr1",
+      "firstName": "first",
+      "lastName": "",
+      "email": "first@gmail.com",
+      "city": "",
+      "phone": "",
+      "role": "user"
+    }
+  ],
+  "orders": [
+    {
+      "customerName": "Igor Калініченко",
+      "customerPhone": "+380675450505",
+      "customerEmail": "admin@gmail.com",
+      "deliverCity": "Харків",
+      "orders": [
+        {
+          "id": "TiEgZ",
+          "imgSrc": "https://firebasestorage.googleapis.com/v0/b/final-59c5a.appspot.com/o/model1_shoes1.jpg?alt=media&token=f6a3691b-43a8-4970-adc2-5bcd3ca773a7",
+          "name": "ADIDAS MODEL1",
+          "price": 564,
+          "size": "30",
+          "count": 1
+        }
+      ],
+      "id": 1
+    },
+    {
+      "customerName": "Igor Калініченко",
+      "customerPhone": "+380675450505",
+      "customerEmail": "admin@gmail.com",
+      "deliverCity": "Харків",
+      "orders": [
+        {
+          "id": "kcAut",
+          "imgSrc": "https://firebasestorage.googleapis.com/v0/b/final-59c5a.appspot.com/o/changed%20nam_633426857bd26-62fde3c.webp?alt=media&token=a7ef69e9-737a-43f1-93ee-17f68a5eec7f",
+          "name": "REEBOK CHANGED NAM",
+          "price": 654,
+          "size": "XL",
+          "count": 2
+        }
+      ],
+      "id": 2
+    },
+    {
+      "customerName": "Igor Калініченко",
+      "customerPhone": "+380675450505",
+      "customerEmail": "admin@gmail.com",
+      "deliverCity": "Харків",
+      "orders": [],
+      "id": 3
+    },
+    {
+      "customerName": "Igor Калініченко",
+      "customerPhone": "+380675450505",
+      "customerEmail": "admin@gmail.com",
+      "deliverCity": "Харків",
+      "orders": [
+        {
+          "id": "j8Zpm",
+          "imgSrc": "https://firebasestorage.googleapis.com/v0/b/final-59c5a.appspot.com/o/changed%20nam_633426857bd26-62fde3c.webp?alt=media&token=a7ef69e9-737a-43f1-93ee-17f68a5eec7f",
+          "name": "REEBOK CHANGED NAM",
+          "price": 654,
+          "size": "XS",
+          "count": 1
+        }
+      ],
+      "id": 4
+    }
+  ]
+}
