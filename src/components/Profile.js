@@ -1,9 +1,10 @@
-import {useSelector} from 'react-redux';
+import {useSelector, useDispatch} from 'react-redux';
 import {Form, Button, Container} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 import { useForm } from "react-hook-form";
 import { useContext, useState } from "react";
 import { useEditUserMutation } from "../redux/userApi";
+import { setUser } from "../redux/userSlice";
 import AlertContext from '../context/AlertContext';
 import {ReactComponent as ChevroneLeft} from '../svg/chevrone-left.svg';
 import '../css/ResetLink.css';
@@ -11,6 +12,7 @@ import '../css/Profile.css';
 
 function Profile () {
     const user = useSelector(state => state.user.users);
+    const dispatch = useDispatch();
     const [editUser] = useEditUserMutation();
     const {register, formState: {errors}, handleSubmit} = useForm({mode: "onChange"});
     const {setAlertMessage} = useContext(AlertContext);
@@ -28,6 +30,20 @@ function Profile () {
             city: data.city,
             phone: data.phone
         }).unwrap();
+        dispatch(setUser({...user, 
+            firstName: data.firstName,
+            lastName: data.lastName,
+            email: data.email,
+            city: data.city,
+            phone: data.phone
+        }));
+        localStorage.setItem('user', JSON.stringify({...user, 
+            firstName: data.firstName,
+            lastName: data.lastName,
+            email: data.email,
+            city: data.city,
+            phone: data.phone
+        }));
         setAlertMessage({text: 'Ваші дані успішно змінено', variant: 'success'});
         setSuccess(true);
     }
