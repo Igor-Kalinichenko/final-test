@@ -14,7 +14,7 @@ import {useAuth} from '../hooks/useAuth';
 import AlertContext from '../context/AlertContext';
 function Header () {
     const {isAuth, firstName, role} = useAuth();
-    const {setPoint, setSale, setNews} = useContext(AlertContext);
+    const {setPoint, setSale, setNovelty} = useContext(AlertContext);
     const orders = useSelector(state => state.cart.cart);
     const [showMenu, setShowMenu] = useState(false);
     
@@ -27,15 +27,15 @@ function Header () {
         <Navbar bg="dark" variant="dark">
             <Container className='position-relative'>
                 <div className='d-flex'>
-                    <Navbar.Brand className='header__logo'><Link to="/"><Logo /></Link></Navbar.Brand>
                     <div className='menu-icon d-none'><MenuIcon onClick={menuClick}/></div>
+                    <Navbar.Brand className='header__logo'><Link to="/"><Logo /></Link></Navbar.Brand>
                 </div>
-                <Nav className={`${showMenu ? 'd-block' : ''} mr-auto header__nav menu-links`} onClick={menuClick} >
+                <Nav className={`${showMenu ? 'showMenu' : 'hideMenu'} mr-auto header__nav menu-links`} onClick={menuClick} >
                     <Link className={'nav-link'} onClick={() => setPoint('Чоловікам')} to="products">Чоловікам</Link>
                     <Link className={'nav-link'} onClick={() => setPoint('Жінкам')} to="products">Жінкам</Link>
                     <Link className={'nav-link'} onClick={() => setPoint('Дітям')} to="products">Дітям</Link>
-                    <Link className={'nav-link text-danger'} onClick={() => setSale(true)} to="products">Sale</Link>
-                    <Link className={'nav-link text-success'} onClick={() => setNews(true)} to="products">Новинки</Link>
+                    <Link className={'nav-link text-danger'} onClick={() => setSale(true)} to="products/sale">Sale</Link>
+                    <Link className={'nav-link text-success'} onClick={() => setNovelty(true)} to="products/new">Новинки</Link>
                     {role==='admin' ? <Link className={'nav-link text-danger'} to="admin">Admin</Link> : ''}
                 </Nav>
                     <div className='d-flex'>

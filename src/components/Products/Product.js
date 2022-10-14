@@ -1,13 +1,13 @@
 import {Col, Card, Badge, OverlayTrigger, Tooltip} from 'react-bootstrap';
 import {Link} from "react-router-dom";
 import { useContext } from 'react';
-import {useAuth} from '../hooks/useAuth';
-import AlertContext from '../context/AlertContext';
-import {ReactComponent as Edit} from '../svg/edit.svg';
-import {ReactComponent as Delete} from '../svg/delete.svg';
-import { useDeleteProductMutation } from '../redux/productsApi';
-import '../css/ResetLink.css';
-import '../css/Products.css';
+import {useAuth} from '../../hooks/useAuth';
+import AlertContext from '../../context/AlertContext';
+import {ReactComponent as Edit} from '../../svg/edit.svg';
+import {ReactComponent as Delete} from '../../svg/delete.svg';
+import { useDeleteProductMutation } from '../../redux/productsApi';
+import '../../css/ResetLink.css';
+import '../../css/Products.css';
 
 function Product ({product}) {
     const {role} = useAuth();

@@ -34,5 +34,17 @@
     border-color: #ffc107;
     background-color: #ffc107;
     color: #fff;
+}
 
+@media screen and (max-width: 1200px) {
+    .product-box {
+        flex-direction: column;
+    }
+    .product-img {
+        width: 70%!important;
+        align-self: center;
+    }
+    .product-info {
+        width: 100%!important;
+    }
 }

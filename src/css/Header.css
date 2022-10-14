@@ -1,3 +1,20 @@
+@keyframes showMenu {
+  0% {
+    left: -50%;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes hideMenu {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -50%;
+  }
+}
+
   .header__nav {
     font-size: 1.5rem;
     font-weight: bold;
@@ -12,18 +29,29 @@
     .menu-icon {
       cursor: pointer;
       display: block!important;
+      padding-top: 0.2rem;
+      margin-right: 0.5rem;
     }
     .menu-links {
-      width: 30%!important;
-      display: none;
+      width: 50%!important;
       flex-direction: column!important;
-      position: absolute;
-      top: 3rem;
+      position: fixed;
       border: 1px solid #343a40;
       background-color: #212529;
-      z-index: 1;
+      z-index: 10;
     }
     .menu-links a {
       text-align: center;
+      border-bottom: 1px solid #343a40;
+    }
+    .showMenu {
+      top: 3.6rem;
+      left: 0;
+      animation: showMenu 1.5s;
+    }
+    .hideMenu {
+      top: 3.6rem;
+      left: -50%;
+      animation: hideMenu 1.5s;
     }
 }

@@ -2,22 +2,22 @@ import {useParams, Link} from "react-router-dom";
 import {useEffect, useContext, useState} from "react";
 import {Col, Spinner, Image, Button, Container} from 'react-bootstrap';
 import {useDispatch, useSelector} from 'react-redux';
-import {setToCart} from '../redux/cartSlice';
-import { useGetProductQuery } from "../redux/productsApi";
-import {ReactComponent as ChevroneLeft} from '../svg/chevrone-left.svg';
-import {ReactComponent as Delivery} from '../svg/delivery.svg';
-import {ReactComponent as Pay} from '../svg/pay.svg';
-import {ReactComponent as Guarantee} from '../svg/guarantee.svg';
-import {ReactComponent as Certificate} from '../svg/certificate.svg';
+import {setToCart} from '../../redux/cartSlice';
+import { useGetProductQuery } from "../../redux/productsApi";
+import {ReactComponent as ChevroneLeft} from '../../svg/chevrone-left.svg';
+import {ReactComponent as Delivery} from '../../svg/delivery.svg';
+import {ReactComponent as Pay} from '../../svg/pay.svg';
+import {ReactComponent as Guarantee} from '../../svg/guarantee.svg';
+import {ReactComponent as Certificate} from '../../svg/certificate.svg';
 import { nanoid } from 'nanoid';
-import SizeTable from './SizeTable';
-import AlertContext from '../context/AlertContext';
-import '../css/ResetLink.css';
-import '../css/SingleProduct.css';
-import DeliveryInfo from "./static/DeliveryInfo";
-import PayInfo from "./static/PayInfo";
-import GuaranteeInfo from "./static/GuaranteeInfo";
-import CertificateInfo from "./static/CertificateInfo";
+import SizeTable from '../SizeTable';
+import AlertContext from '../../context/AlertContext';
+import '../../css/ResetLink.css';
+import '../../css/SingleProduct.css';
+import DeliveryInfo from "../static/DeliveryInfo";
+import PayInfo from "../static/PayInfo";
+import GuaranteeInfo from "../static/GuaranteeInfo";
+import CertificateInfo from "../static/CertificateInfo";
 
 function SingleProduct() {
   const {productId} = useParams();
@@ -86,11 +86,11 @@ function SingleProduct() {
             <ChevroneLeft />{product.point}</h6></Link>
     </span>
     <Col xs={12}>
-        <div className="d-flex py-4">
-            <div style={{width: "50%"}}>
+        <div className="d-flex py-4 product-box">
+            <div style={{width: "50%"}} className="product-img">
                 <Image style={{width: "100%"}} src={product.imgSrc} />
             </div>
-            <div className="px-5 w-50">
+            <div className="px-5 w-50 product-info">
                 <h2 className="text-capitalize text-center">{product.category+' '+product.brand+' '+product.model}</h2>
                 <div className="text-center py-4 custom-price text-secondary">{'Ціна '+product.price.toFixed(2)+' грн'}</div>
                 <div><h5>Таблиця Розмірів</h5></div>

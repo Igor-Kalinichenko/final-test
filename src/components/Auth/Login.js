@@ -38,7 +38,7 @@ function Login () {
     <Container>
         <div className='d-flex flex-column align-items-center justify-content-center mt-4'>
             <h1>Вхід</h1>
-            <div className='w-50 '>
+            <div className='w-50 auth-form'>
                 <CurrentForm title="Sign In" handleClick={handleRegister} error={error} />
                 <p>Не маєте акаунту? <Link to="/register" >Зареєструватись</Link></p>
             </div>

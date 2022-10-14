@@ -8,6 +8,7 @@ import { Link, Navigate} from 'react-router-dom';
 import {Container, Form} from 'react-bootstrap';
 import {useAddUserMutation} from '../../redux/userApi';
 import AlertContext from '../../context/AlertContext';
+import '../../css/Auth.css';
 
 function Register () {
     const dispatch = useDispatch();
@@ -52,7 +53,7 @@ function Register () {
     <Container>
         <div className='d-flex flex-column align-items-center justify-content-center mt-4'>
             <h1>Реєстрація</h1>
-            <div className='w-50 '>
+            <div className='w-50 auth-form'>
                 <Form.Group className="mb-3">
                     <Form.Label>Ім'я</Form.Label>
                     <Form.Control 
