@@ -23,3 +23,10 @@
     font-weight: bold;
     cursor: pointer;
 }
+
+
+@media screen and (max-width: 960px) {
+    .clothImg div {
+      display: none;
+    }
+}
