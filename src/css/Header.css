@@ -25,6 +25,10 @@
     fill: #ffffffbf;
   }
 
+  .closeIcon {
+    display: none;
+  }
+
   @media screen and (max-width: 1100px) {
     .menu-icon {
       cursor: pointer;
@@ -45,6 +49,9 @@
     .menu-links a {
       text-align: center;
       border-bottom: 1px solid #343a40;
+    }
+    .closeIcon {
+      display: block;
     }
     .showMenu {
       left: 0;
