@@ -94,34 +94,34 @@ function SingleProduct() {
                 <h2 className="text-capitalize text-center">{product.category+' '+product.brand+' '+product.model}</h2>
                 <div className="text-center py-4 custom-price text-secondary">{'Ціна '+product.price.toFixed(2)+' грн'}</div>
                 <div><h5>Таблиця Розмірів</h5></div>
-                <div className="d-flex flex-wrap">
+                <div className="d-flex flex-wrap sizeTable">
                     {sizeTable.map((sizes, index) => <SizeTable key={index} sizes={sizes} active={active} handleClick={handleClick}/>)}
                 </div>
                 <div className="text-center m-5">
                     <Button variant="success" size="lg" onClick={addToCart}>Додати в кошик</Button>
                     {infoMessage ? <p className={`text-${infoMessage.style}`}>{infoMessage.text}</p> : ''}
                 </div>
-                <div className="d-flex my-4">
-                    <div className="info-block px-2 w-25" data-value='delivery' onClick={(e) => showInfo(e.currentTarget)}>
+                <div className="d-flex my-4 info-block">
+                    <div className="info-block-item px-2 w-25" data-value='delivery' onClick={(e) => showInfo(e.currentTarget)}>
                         <div className="text-center"><Delivery /></div>
                         <div className="text-center">Безкоштовна доставка</div>
                     </div>
-                    <div className="info-block px-2 w-25" data-value='pay' onClick={(e) => showInfo(e.currentTarget)}>
+                    <div className="info-block-item px-2 w-25" data-value='pay' onClick={(e) => showInfo(e.currentTarget)}>
                         <div className="text-center"><Pay /></div>
                         <div className="text-center">Зручна оплата</div>
                     </div>
-                    <div className="info-block px-2 w-25" data-value='guarantee' onClick={(e) => showInfo(e.currentTarget)}>
+                    <div className="info-block-item px-2 w-25" data-value='guarantee' onClick={(e) => showInfo(e.currentTarget)}>
                         <div className="text-center"><Guarantee /></div>
                         <div className="text-center">Гарантія повернення</div>
                     </div>
-                    <div className="info-block px-2 w-25" data-value='certificate' onClick={(e) => showInfo(e.currentTarget)}>
+                    <div className="info-block-item px-2 w-25" data-value='certificate' onClick={(e) => showInfo(e.currentTarget)}>
                         <div className="text-center"><Certificate /></div>
                         <div className="text-center">Оригінальні товари</div>
                     </div>
                 </div>
             </div>
         </div>
-        <div className="d-flex align-center justify-content-center">
+        <div className="d-flex align-center justify-content-center flex-wrap">
             <div className="m-3 custom-tabs info-btn" data-value='delivery' id="delivery" onClick={(e) => showInfo(e.target)}>Delivery</div>
             <div className="m-3 custom-tabs info-btn" data-value='pay' id="pay" onClick={(e) => showInfo(e.target)}>Pay</div>
             <div className="m-3 custom-tabs info-btn" data-value='guarantee' id="guarantee" onClick={(e) => showInfo(e.target)}>Guarantee</div>
