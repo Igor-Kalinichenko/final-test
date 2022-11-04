@@ -36,3 +36,9 @@
         width: 49%;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .products-box, .info-box {
+        width: 100%;
+    }
+}

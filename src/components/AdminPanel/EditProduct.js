@@ -16,7 +16,7 @@ function AddProducts () {
     const {data: products} = useGetProductsQuery();
     const [editProduct] = useEditProductMutation();
     const {setAlertMessage} = useContext(AlertContext);
-    const {register, formState: {errors}, handleSubmit, reset} = useForm({mode: "onChange"});
+    const {register, formState: {errors}, handleSubmit} = useForm({mode: "onChange"});
     const [success, setSuccess] = useState(false);
     const [loading, setLoading] = useState(false);
 

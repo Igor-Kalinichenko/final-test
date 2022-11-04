@@ -1,6 +1,6 @@
 @keyframes showMenu {
   0% {
-    left: -50%;
+    left: -100%;
   }
   100% {
     left: 0;
@@ -11,7 +11,7 @@
     left: 0;
   }
   100% {
-    left: -50%;
+    left: -100%;
   }
 }
 
@@ -36,7 +36,7 @@
       width: 50%!important;
       flex-direction: column!important;
       position: fixed;
-      top: 3.6rem;
+      top: 0;
       left: -50%;
       border: 1px solid #343a40;
       background-color: #212529;
@@ -47,19 +47,29 @@
       border-bottom: 1px solid #343a40;
     }
     .showMenu {
-      top: 3.6rem;
       left: 0;
-      animation: showMenu 1.5s;
+      animation: showMenu 1s;
     }
     .hideMenu {
-      top: 3.6rem;
       left: -50%;
-      animation: hideMenu 1.5s;
+      animation: hideMenu 1s;
     }
 }
 
 @media screen and (max-width: 511px) {
   .custom-container {
     justify-content: center!important;
+  }
+  .menu-links {
+    width: 100%!important;
+    left: -100%;
+  }
+  .showMenu {
+    left: 0;
+    animation: showMenu 1s;
+  }
+  .hideMenu {
+    left: -100%;
+    animation: hideMenu 1s;
   }
 }

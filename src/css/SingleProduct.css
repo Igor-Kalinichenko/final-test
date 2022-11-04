@@ -58,7 +58,7 @@
     }
     .info-block {
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: center;
     }
     .info-block-item {
         margin-top: 1rem;

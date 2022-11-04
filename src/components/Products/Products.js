@@ -1,5 +1,5 @@
 import { useGetProductsQuery } from '../../redux/productsApi';
-import {Row, NavDropdown, Nav, Spinner, Container} from 'react-bootstrap';
+import {Row, Spinner, Container} from 'react-bootstrap';
 import { useState, useEffect } from 'react';
 import Product from './Product';
 import ProductsFilter from './ProductsFilter';

@@ -7,28 +7,27 @@ import {ReactComponent as LogIn} from '../svg/login.svg';
 import {ReactComponent as LogOut} from '../svg/logout.svg';
 import {ReactComponent as MenuIcon} from '../svg/menu.svg';
 import {ReactComponent as ContactsIcon} from '../svg/contacts.svg';
+import {ReactComponent as CloseIcon} from '../svg/close.svg';
 import '../css/Header.css';
 import {useSelector} from 'react-redux';
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import {useAuth} from '../hooks/useAuth';
 import AlertContext from '../context/AlertContext';
 function Header () {
     const {isAuth, firstName, role} = useAuth();
     const {setPoint, setSale, setNovelty} = useContext(AlertContext);
     const orders = useSelector(state => state.cart.cart);
-    const [showMenu, setShowMenu] = useState(false);
     
     const menuClick = () => {
         if (window.screen.width < 1100) {
-            if (!showMenu) {
-                document.getElementById('menu').classList.remove('hideMenu');
-                document.getElementById('menu').classList.add('showMenu');
-                setShowMenu(true);
-            } else {
-                document.getElementById('menu').classList.remove('showMenu');
-                document.getElementById('menu').classList.add('hideMenu');
-                setShowMenu(false);
-            }
+            document.getElementById('menu').classList.remove('hideMenu');
+            document.getElementById('menu').classList.add('showMenu');
+        }
+    }
+    const hideMenu = () => {
+        if (window.screen.width < 1100) {
+            document.getElementById('menu').classList.remove('showMenu');
+            document.getElementById('menu').classList.add('hideMenu');
         }
     }
     return <>
@@ -38,7 +37,8 @@ function Header () {
                     <div className='menu-icon d-none'><MenuIcon onClick={menuClick}/></div>
                     <Navbar.Brand className='header__logo'><Link to="/"><Logo /></Link></Navbar.Brand>
                 </div>
-                <Nav className={`mr-auto header__nav menu-links`} id='menu' onClick={menuClick} >
+                <Nav className={`mr-auto header__nav menu-links`} id='menu' onClick={hideMenu} >
+                    <div className='closeIcon position-absolute' style={{right: '1rem'}}><CloseIcon onClick={hideMenu} /></div>
                     <Link className={'nav-link'} onClick={() => setPoint('Чоловікам')} to="products">Чоловікам</Link>
                     <Link className={'nav-link'} onClick={() => setPoint('Жінкам')} to="products">Жінкам</Link>
                     <Link className={'nav-link'} onClick={() => setPoint('Дітям')} to="products">Дітям</Link>
