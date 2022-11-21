@@ -9,7 +9,7 @@ function CarouselCards () {
     const {data: products, isLoading, isSuccess} = useGetProductsQuery();
     
     const dateNow = Date.now();
-    const sevenDaysAgo = dateNow - 604800000;
+    const thirtyDaysAgo = dateNow - 2592000000;
 
     const responsive = {
         desktop: {
@@ -39,7 +39,7 @@ function CarouselCards () {
         containerClass="carousel-container"
         removeArrowOnDeviceType={["tablet", "mobile"]}
     >
-        {products?.filter(el => el.date > sevenDaysAgo).map(product => <div key={product.id}><Card className='mx-1 position-relative card-hover'>
+        {products?.filter(el => el.date > thirtyDaysAgo).map(product => <div key={product.id}><Card className='mx-1 position-relative card-hover'>
         <Card.Img variant="top" src={product.imgSrc} />
         <Card.Body className="">
             <div className='position-absolute' style={{top: '.5rem', left: '0rem'}}>

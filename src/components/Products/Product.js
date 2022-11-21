@@ -31,7 +31,7 @@ function Product ({product}) {
         <Card.Body>
             <div className='position-absolute' style={{top: '.5rem', left: '0rem'}}>
                 {product.sale ? <Badge style={{marginLeft: '0.5rem'}} bg="danger">SALE</Badge> : ''}
-                {Math.round((dateNow - product.date) / oneDay)<7 ? <Badge style={{marginLeft: '0.5rem'}} bg="success">NEW</Badge> : ''}
+                {Math.round((dateNow - product.date) / oneDay)<30 ? <Badge style={{marginLeft: '0.5rem'}} bg="success">NEW</Badge> : ''}
             </div>
 
             {role === 'admin' && <>

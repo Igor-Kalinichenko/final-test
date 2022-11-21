@@ -17,7 +17,7 @@ function ProductsFilter ({ productsToRender, setProductsToRender, novelty, sale,
     const {setPoint, setSale, setNovelty} = useContext(AlertContext);
 
     const dateNow = Date.now();
-    const sevenDaysAgo = dateNow - 604800000;
+    const thirtyDaysAgo = dateNow - 2592000000;
 
     useEffect(() => {
         setCategory('');
@@ -47,7 +47,7 @@ function ProductsFilter ({ productsToRender, setProductsToRender, novelty, sale,
         setFilteredBySale(false);
         setCategory(category);
         if(novelty) {
-            setProductsToRender(products?.filter(el => el.date > sevenDaysAgo)
+            setProductsToRender(products?.filter(el => el.date > thirtyDaysAgo)
             .filter(el => el.category.toLowerCase() === category.toLowerCase()));
         }
         if(sale) {
@@ -68,7 +68,7 @@ function ProductsFilter ({ productsToRender, setProductsToRender, novelty, sale,
         setFilteredBySale(false);
         let searchValue = e.currentTarget.value.toLowerCase().trim();
         if(novelty) {
-            setProductsToRender(products?.filter(el => el.date > sevenDaysAgo)
+            setProductsToRender(products?.filter(el => el.date > thirtyDaysAgo)
             .filter(el => el.model?.toLowerCase().includes(searchValue)));
         }
         if(sale) {

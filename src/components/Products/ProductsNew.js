@@ -9,10 +9,10 @@ function ProductsNew ({novelty}) {
     const [productsToRender, setProductsToRender] = useState([]);
 
     const dateNow = Date.now();
-    const sevenDaysAgo = dateNow - 604800000;
+    const thirtyDaysAgo = dateNow - 2592000000;
 
     useEffect(() => {
-        if (isSuccess) setProductsToRender(products?.filter(el => el.date > sevenDaysAgo));
+        if (isSuccess) setProductsToRender(products?.filter(el => el.date > thirtyDaysAgo));
     },[products]);
 
     return <>

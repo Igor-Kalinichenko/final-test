@@ -9,7 +9,7 @@ function CarouselSale () {
     const {data: products, isLoading, isSuccess} = useGetProductsQuery();
     
     const dateNow = Date.now();
-    const sevenDaysAgo = dateNow - 604800000;
+    const thirtyDaysAgo = dateNow - 2592000000;
 
     const responsive = {
         desktop: {
@@ -36,10 +36,6 @@ function CarouselSale () {
         infinite={true}
         autoPlay={true}
         autoPlaySpeed={5000}
-        // keyBoardControl={true}
-        // customTransition="all .5"
-        // transitionDuration={3000}
-        // containerClass="carousel-container"
         removeArrowOnDeviceType={["tablet", "mobile"]}
     >
         {products?.filter(el => el.sale === true).map(product => <div key={product.id}><Card className='mx-1 position-relative card-hover'>
@@ -47,7 +43,7 @@ function CarouselSale () {
         <Card.Body className="">
             <div className='position-absolute' style={{top: '.5rem', left: '0rem'}}>
                 <Badge style={{marginLeft: '0.5rem'}} bg="danger">SALE</Badge>
-                {product.date > sevenDaysAgo && <Badge style={{marginLeft: '0.5rem'}} bg="success">NEW</Badge>}
+                {product.date > thirtyDaysAgo && <Badge style={{marginLeft: '0.5rem'}} bg="success">NEW</Badge>}
             </div>
             <Card.Title className='text-capitalize'>
                 <Link to={`products/${product.id}`} className='resetLinkCard'>
