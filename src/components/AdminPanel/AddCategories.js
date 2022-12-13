@@ -22,7 +22,7 @@ function AddCategories () {
     const {setAlertMessage} = useContext(AlertContext);
 
     const toggleShowA = id => setToast(id);
-    const CheckName = name => data.some(el => el.name === name.toLowerCase());
+    const CheckName = name => data.record?.some(el => el.name === name.toLowerCase());
     const addNewCategory = async () => {
         let check = CheckName(categoryRef.current.value);
         if(categoryRef.current.value && !check) {
@@ -36,8 +36,8 @@ function AddCategories () {
         }
     }
     const deleteBtn = async (id) => {
-        const oldCategoryName = data.filter(el => el.id === id)[0].name;
-        const categoryProductsToEdit = products.filter(el => el.category === oldCategoryName);
+        const oldCategoryName = data.record?.filter(el => el.id === id)[0].name;
+        const categoryProductsToEdit = products.record?.filter(el => el.category === oldCategoryName);
         await deleteCategory(id).unwrap();
         categoryProductsToEdit.map(el => setAllCategoriesInProducts(el.id));
         setAlertMessage({text: 'Категорію видалено', variant: 'danger'});
@@ -45,9 +45,9 @@ function AddCategories () {
     const editBtn = async (id) => {
         let check = CheckName(updateCategory);
         if(updateCategory && !check) {
-            const oldCategoryName = data.filter(el => el.id === id)[0].name;
+            const oldCategoryName = data.record?.filter(el => el.id === id)[0].name;
             await editCategory({id, name: updateCategory.toLowerCase()}).unwrap();
-            const categoryProductsToEdit = products.filter(el => el.category === oldCategoryName);
+            const categoryProductsToEdit = products.record?.filter(el => el.category === oldCategoryName);
             categoryProductsToEdit.map(el => setNewCategoryInProducts(el.id));
             setUpdateCategory('');
             setAlertMessage({text: 'Категорію змінено', variant: 'success'});
@@ -65,7 +65,7 @@ function AddCategories () {
     return <>
     <h3 className='text-center'>Всі Категорії</h3>
     <ListGroup className='my-4'>
-        {data.map(el => (
+        {data.record?.map(el => (
         <ListGroup.Item 
           className='d-flex justify-content-between' 
           variant="secondary" 

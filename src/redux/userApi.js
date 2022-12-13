@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 export const userApi = createApi({
     reducerPath: 'userApi',
     tagTypes: ['Users'],
-    baseQuery: fetchBaseQuery({baseUrl: 'https://immense-forest-97338.herokuapp.com/'}),
+    baseQuery: fetchBaseQuery({baseUrl: 'https://api.npoint.io/727f65753e9351c16a19'}),
     endpoints: (build) => ({
         getUsers: build.query({
             query: () => `users`,

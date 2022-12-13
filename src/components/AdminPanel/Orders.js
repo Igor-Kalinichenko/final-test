@@ -14,7 +14,7 @@ function Orders () {
     }
 
     return <>
-    {orders?.map((customer, index) => 
+    {orders?.record?.map((customer, index) => 
         <div key={customer.id}><div className="mt-4"><b>Замовлення {index+1}</b></div>
         <div className="border border-primary">
         <div className='d-flex p-2'>
@@ -29,7 +29,7 @@ function Orders () {
                 <th>Ціна</th>
             </tr></thead>
             <tbody>
-                {customer.orders.map((order, ind) => 
+                {customer.orders.record?.map((order, ind) => 
                     <tr key={order.id}>
                         <td>{ind+1}</td>
                         <td>{order.name}</td>

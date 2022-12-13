@@ -21,12 +21,14 @@ function Brand () {
     const [error, setError] = useState(false);
     const {setAlertMessage} = useContext(AlertContext);
 
-
     const toggleShowA = id => setToast(id);
+    
     const CheckName = name => data.some(el => el.name === name.toLowerCase());
+
     const addNewBrand = async () => {
         let check = CheckName(brandRef.current.value);
         if(brandRef.current.value && !check) {
+
           await addBrand({name: brandRef.current.value.toLowerCase()}).unwrap();
           setAlertMessage({text: 'Бренд успішно додано', variant: 'success'});
           brandRef.current.value = '';

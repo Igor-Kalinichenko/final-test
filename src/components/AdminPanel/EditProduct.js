@@ -20,7 +20,7 @@ function AddProducts () {
     const [success, setSuccess] = useState(false);
     const [loading, setLoading] = useState(false);
 
-    const CheckProduct = (model, brand, category, point, price) => products.some(el => {
+    const CheckProduct = (model, brand, category, point, price) => products.record?.some(el => {
         if(el.model === model && el.brand === brand && el.category === category && el.point === point && el.price === price) {
             return true;
         } else return false;
@@ -84,7 +84,7 @@ function AddProducts () {
                     <Form.Label><h5>Категорія</h5></Form.Label>
                     <Form.Select {...register("category", {required: true})}>
                         <option value={product?.category}>{product?.category.toUpperCase()}</option>
-                        {categories?.map(el => (<option className='text-capitalize' key={el.id} value={el.name}>{el.name}</option>))}
+                        {categories?.record?.map(el => (<option className='text-capitalize' key={el.id} value={el.name}>{el.name}</option>))}
                     </Form.Select>
                     <div>{errors?.category && <p className='text-danger px-3'>Обов'язкове поле. Виберіть свій вариант</p>}</div>
                 </Form.Group>
@@ -92,7 +92,7 @@ function AddProducts () {
                     <Form.Label><h5>Бренд</h5></Form.Label>
                     <Form.Select {...register("brand", {required: true})}>
                         <option value={product?.brand}>{product?.brand.toUpperCase()}</option>
-                        {brands?.map(el => (<option className='text-capitalize' key={el.id} value={el.name}>{el.name}</option>))}
+                        {brands?.record?.map(el => (<option className='text-capitalize' key={el.id} value={el.name}>{el.name}</option>))}
                     </Form.Select>
                     <div>{errors?.brand && <p className='text-danger px-3'>Обов'язкове поле. Виберіть свій вариант</p>}</div>
                 </Form.Group>
