@@ -82,17 +82,17 @@ function SingleProduct() {
   return <><Container>
     <span className='m-3'>
         <Link to="/" className="resetLink"><h6><ChevroneLeft /> На головну</h6></Link>
-        <Link className="resetLink" onClick={() => setPoint(product.point)} to="/products"><h6 className="px-2">
-            <ChevroneLeft />{product.point}</h6></Link>
+        <Link className="resetLink" onClick={() => setPoint(product?.point)} to="/products"><h6 className="px-2">
+            <ChevroneLeft />{product?.point}</h6></Link>
     </span>
     <Col xs={12}>
         <div className="d-flex py-4 product-box">
             <div style={{width: "50%"}} className="product-img">
-                <Image style={{width: "100%"}} src={product.imgSrc} />
+                <Image style={{width: "100%"}} src={product?.imgSrc} />
             </div>
             <div className="px-5 w-50 product-info">
-                <h2 className="text-capitalize text-center">{product.category+' '+product.brand+' '+product.model}</h2>
-                <div className="text-center py-4 custom-price text-secondary">{'Ціна '+product.price.toFixed(2)+' грн'}</div>
+                <h2 className="text-capitalize text-center">{product?.category+' '+product?.brand+' '+product?.model}</h2>
+                <div className="text-center py-4 custom-price text-secondary">{'Ціна '+product?.price.toFixed(2)+' грн'}</div>
                 <div><h5>Таблиця Розмірів</h5></div>
                 <div className="d-flex flex-wrap sizeTable">
                     {sizeTable.map((sizes, index) => <SizeTable key={index} sizes={sizes} active={active} handleClick={handleClick}/>)}
